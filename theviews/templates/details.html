@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div id='single_product'>
+        <h3>{{ pro_title }}</h3>
+        <img src='/{{ product.pro_image }}/' width='400' height='300' />
+        <p><b> $ {{ product.pro_price }} </b></p>
+        <p>{{ product.pro_desc }} </p>
+        <a href='../' style='float:left;'>Go Back</a>
+        <a href='/'><button style='float:right'>Add to Cart</button></a>
+    </div>
+{% endblock %}
